@@ -10,9 +10,17 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/KillOnCollision.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/MovementScript.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MovementScript.cs" />
+      <option value="$PROJECT_DIR$/Assets/Bullet.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Weapon.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Bullet.cs" />
+      <option value="$PROJECT_DIR$/Assets/KillOnCollision.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1lxpzTjFrLNgae3ribzpyDxsu57" />
@@ -58,6 +66,7 @@
       <updated>1608548862445</updated>
       <workItem from="1608548870057" duration="8000" />
       <workItem from="1608549638020" duration="942000" />
+      <workItem from="1608632978653" duration="2468000" />
     </task>
     <servers />
   </component>
