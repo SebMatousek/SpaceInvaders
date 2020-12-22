@@ -154,7 +154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0.25
   zRotation: 25
-  yRotation: 80
+  yRotation: 30
   smooth: 3
 --- !u!212 &271966215
 SpriteRenderer:
@@ -234,7 +234,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firePoint: {fileID: 1658592843}
-  bulletPrefab: {fileID: 5284562502534942252, guid: 9d8ac2a4699c9d94f9cd0402df08d1c6,
+  bulletPrefab: {fileID: 2532185781313177700, guid: 08405d5732dc52f478e18e26f734ce88,
     type: 3}
 --- !u!1 &519420028
 GameObject:
@@ -329,13 +329,14 @@ GameObject:
   m_Component:
   - component: {fileID: 962611250}
   - component: {fileID: 962611249}
+  - component: {fileID: 962611251}
   m_Layer: 0
   m_Name: BulletKiller
   m_TagString: Killer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!61 &962611249
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -360,7 +361,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 38.081062, y: 5.1498375}
+  m_Size: {x: 60, y: 2}
   m_EdgeRadius: 0
 --- !u!4 &962611250
 Transform:
@@ -376,6 +377,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &962611251
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 962611248}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &1658592842
 GameObject:
   m_ObjectHideFlags: 0

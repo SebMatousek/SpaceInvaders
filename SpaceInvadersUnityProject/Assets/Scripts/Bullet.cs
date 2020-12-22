@@ -2,13 +2,16 @@
 
 public class Bullet : MonoBehaviour
 {
-    [SerializeField] private float bulletSpeed;
+    [SerializeField] private float bulletSpeed = 1f;
+    public Rigidbody2D rb;
 
-    private void FixedUpdate()
+    private void Start()
     {
-        var transform1 = transform;
-        var position = transform1.position;
-        position.y += bulletSpeed;
-        transform1.position = position;
+        rb.velocity = transform.up * bulletSpeed;
+    }
+
+    void OnTriggerEnter2D(Collider2D hitObject)
+    {
+        Destroy(gameObject);
     }
 }
