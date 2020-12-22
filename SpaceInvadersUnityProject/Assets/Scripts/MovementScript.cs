@@ -9,6 +9,8 @@ public class MovementScript : MonoBehaviour
     [SerializeField] private float zRotation = 30;
     [SerializeField] private float yRotation = 30;
     [SerializeField] private float smooth = 3.0f;
+    [SerializeField] private float border = 17f;
+
 
     private void FixedUpdate()
     {
@@ -16,7 +18,12 @@ public class MovementScript : MonoBehaviour
         {
             var transform1 = transform;
             var position = transform1.position;
-            position.x -= speed;
+
+            if (!(position.x - speed < -border))
+            {
+                position.x -= speed;
+            }
+
             transform1.position = position;
 
             Quaternion target = Quaternion.Euler(0, yRotation, zRotation);
@@ -26,7 +33,12 @@ public class MovementScript : MonoBehaviour
         {
             var transform1 = transform;
             var position = transform1.position;
-            position.x += speed;
+
+            if (!(position.x + speed > border))
+            {
+                position.x += speed;
+            }
+
             transform1.position = position;
 
             Quaternion target = Quaternion.Euler(0, -yRotation, -zRotation);
