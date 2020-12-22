@@ -5,8 +5,10 @@ using UnityEngine;
 
 public class MovementScript : MonoBehaviour
 {
-    [SerializeField] private float speed = 10f;
-    
+    [SerializeField] private float speed = 0.25f;
+    [SerializeField] private float zRotation = 30;
+    [SerializeField] private float smooth = 3.0f;
+
     private void FixedUpdate()
     {
         if (Input.GetKey(KeyCode.LeftArrow))
@@ -15,6 +17,9 @@ public class MovementScript : MonoBehaviour
             var position = transform1.position;
             position.x -= speed;
             transform1.position = position;
+
+            Quaternion target = Quaternion.Euler(0, 0, zRotation);
+            transform.rotation = Quaternion.Slerp(transform.rotation, target, Time.deltaTime * smooth);
         }
         if (Input.GetKey(KeyCode.RightArrow))
         {
@@ -22,7 +27,16 @@ public class MovementScript : MonoBehaviour
             var position = transform1.position;
             position.x += speed;
             transform1.position = position;
+
+            Quaternion target = Quaternion.Euler(0, 0, -zRotation);
+            transform.rotation = Quaternion.Slerp(transform.rotation, target, Time.deltaTime * smooth);
         }
+        else
+        {
+            Quaternion target = Quaternion.Euler(0, 0, 0);
+            transform.rotation = Quaternion.Slerp(transform.rotation, target, Time.deltaTime * smooth);
+        }
+        /*
         if (Input.GetKey(KeyCode.UpArrow))
         {
             var transform1 = transform;
@@ -36,7 +50,7 @@ public class MovementScript : MonoBehaviour
             var position = transform1.position;
             position.y -= speed;
             transform1.position = position;
-        }
+        }*/
     }
 
     private void OnCollisionEnter(Collision other)
