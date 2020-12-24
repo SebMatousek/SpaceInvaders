@@ -10,8 +10,11 @@ public class Bullet : MonoBehaviour
         rb.velocity = transform.up * bulletSpeed;
     }
 
-    void OnTriggerEnter2D(Collider2D hitObject)
+    private void OnTriggerEnter2D(Collider2D hitObject)
     {
-        Destroy(gameObject);
+        if (hitObject.CompareTag("Enemy") || hitObject.CompareTag("Killer"))
+        {
+            Destroy(gameObject);
+        }
     }
 }
