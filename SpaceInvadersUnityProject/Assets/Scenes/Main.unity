@@ -539,7 +539,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 962611248}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 19.88, z: 0}
+  m_LocalPosition: {x: 0, y: 8.81, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -597,13 +597,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnPoint: {fileID: 1141788860}
   spawnChancePercent: 10
-  enemy1Prefab: {fileID: 1501720569564578224, guid: b674a012e84144c4a9e26eeff0f6bce9,
-    type: 3}
-  enemy2Prefab: {fileID: 8507884316013476434, guid: c465112ab3360944a9c99ea8b91bec7f,
-    type: 3}
-  enemy3Prefab: {fileID: 5774127124133953889, guid: 976b5ffea73adda4ca8d8b13cb29f79d,
-    type: 3}
-  enemy4Prefab: {fileID: 3592449922717440807, guid: a392990f010db2949a375eacf4ec0026,
+  enemyPrefab: {fileID: 4037910741249667499, guid: 9e089ba9239955a4a97ccca8a6f80b6e,
     type: 3}
 --- !u!4 &1141788860
 Transform:
@@ -613,7 +607,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1141788858}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 10.68, z: -23.743626}
+  m_LocalPosition: {x: 0, y: 6.26, z: -23.743626}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
