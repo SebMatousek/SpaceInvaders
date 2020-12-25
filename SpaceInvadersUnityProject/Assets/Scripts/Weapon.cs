@@ -7,13 +7,11 @@ public class Weapon : MonoBehaviour
     public Transform firePoint;
     [SerializeField] private GameObject bulletPrefab;
 
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Shoot();
-            //Debug.Log("pew");
         }
     }
 
