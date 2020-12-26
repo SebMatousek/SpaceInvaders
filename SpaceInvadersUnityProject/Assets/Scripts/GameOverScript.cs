@@ -13,6 +13,11 @@ public class GameOverScript : MonoBehaviour
 
     private void Update()
     {
-        gameObjectToEnableOnGameOver.SetActive(isGameOver);
+        if (isGameOver)
+        {
+            gameObjectToEnableOnGameOver.SetActive(true);
+            
+        }
+        
     }
 }

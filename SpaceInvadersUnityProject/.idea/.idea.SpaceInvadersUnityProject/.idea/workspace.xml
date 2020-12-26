@@ -12,6 +12,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EnemyScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ScoreScript.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -22,10 +23,12 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Weapon.cs" />
       <option value="$PROJECT_DIR$/Assets/RestartScript.cs" />
       <option value="$PROJECT_DIR$/Assets/GameOverScript.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Bullet.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Death.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/EnemyScript.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Spawning.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameOverScript.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Bullet.cs" />
+      <option value="$PROJECT_DIR$/Assets/ScoreScript.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1lxpzTjFrLNgae3ribzpyDxsu57" />
@@ -72,7 +75,8 @@
       <workItem from="1608548870057" duration="8000" />
       <workItem from="1608549638020" duration="942000" />
       <workItem from="1608632978653" duration="3158000" />
-      <workItem from="1608797094598" duration="4160000" />
+      <workItem from="1608797094598" duration="4655000" />
+      <workItem from="1608990265638" duration="1483000" />
     </task>
     <servers />
   </component>
